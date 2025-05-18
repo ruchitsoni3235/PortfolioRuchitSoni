@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<body>
+<nav id ="navbar" class="flex s-around bg-color">
+    <div class="left-nav">
+    <h2 class="t-white">Portfolio</h2>
+    </div>
+    <div class="right-nav">
+        <li><a href="#home" class="t-white-roboto">Home<i class="fa-solid fa-house"></i></a></li>
+         <li><a href="#about" class="t-white-roboto">About me<i class="fa-solid fa-user"></i></a></li>
+         <li><a href="#skills" class="t-white-roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+         <li><a href="#projects" class="t-white-roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+         <li><a href="#contact" class="t-white-roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+    </div>
+</nav>
+<h1> Hi there</h1>
+
+<img src="{% static 'images/profile_avtar.png' %}" alt="this is profile pic">
+</body>
+</html>
