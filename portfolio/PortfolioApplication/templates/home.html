@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
 </head>
 <body>
+<!--- navbar section --->
 <nav id ="navbar" class="flex s-around bg-color">
     <div class="left-nav">
     <h2 class="t-white">Portfolio</h2>
@@ -18,8 +19,49 @@
          <li><a href="#contact" class="t-white-roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
     </div>
 </nav>
-<h1> Hi there</h1>
-
-<img src="{% static 'images/profile_avtar.png' %}" alt="this is profile pic">
+<!--- home section --->
+<section id="home" class="flex s-around sw-80 m-auto">
+    <div class="home-left flex items-center">
+        <div class="home-content">
+            <h6 class="poppinss">Hi, I'm</h6>
+            <h1 class="t-white">Ruchit Soni</h1>
+            <h4 class="poppinss">Software Engineer</h4>
+            <a href="{%static 'pdf/RuchitSoniNewCV.pdf'%}" target="_blank">
+            <button class="btn popinns">Resume</button>
+            </a>
+            <a class="btn live popinns" id="hireme" href="https://www.linkedin.com/in/ruchitsoni/"> Let's Talk</a>
+        </div>
+    </div>
+    <div class="home-right flex s center items-center">
+        <div class="circle flex s-center items-center" id="mainImage">
+            <img src="{% static 'images/mypic.png' %}" alt="picture">
+        </div>
+    </div>
+</section>
+<!--- about section---->
+<section id="about">
+<h1 class="t center my-2 t-white f-2">About<Menu></Menu></h1>
+    <div class="about-container flex s-around">
+        <div class="about-left flex s-center items-center">
+        <img src="{% static 'images/coder.png' %}" alt="coder's profile pic">
+        </div>
+    </div>
+    <div class="about-right flex">
+        <div class="about-content">
+            <h1 class="t-white m-b-1 poppinss"> Ruchit Soni</h1>
+            <p class="t-white poppins">Software Engineer with 2+ years of experience in backend development and QA automation, currently pursuing a Global MBA in Berlin.
+Passionate about building scalable web apps and bridging tech with business strategy.</p>
+            <a href="btn" id="hireme "href="https://github.com/ruchitsoni3235">Hire Me</a>
+        </div>
+    </div>
+</section>
+<section id="skills">
+    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+    <div class="services-container flex s-around h-50">
+    <div class="skills-left flex s-center items-center">
+      <img src="{% static 'images/pro.png' %}" alt="pro image">
+    </div>
+    </div>
+</section>
 </body>
 </html>
