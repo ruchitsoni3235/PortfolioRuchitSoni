@@ -1,102 +1,217 @@
-{% load static %}
+{% load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ruchit Soni </title>
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
-<!--- navbar section --->
-<nav id ="navbar" class="flex s-around bg-color">
-    <div class="left-nav">
-    <h2 class="t-white">Portfolio</h2>
-    </div>
-    <div class="right-nav">
-        <li><a href="#home" class="t-white-roboto">Home<i class="fa-solid fa-house"></i></a></li>
-         <li><a href="#about" class="t-white-roboto">About me<i class="fa-solid fa-user"></i></a></li>
-         <li><a href="#skills" class="t-white-roboto">Skills<i class="fa-solid fa-code"></i></a></li>
-         <li><a href="#projects" class="t-white-roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
-         <li><a href="#contact" class="t-white-roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
-    </div>
-</nav>
-<!--- home section --->
-<section id="home" class="flex s-around sw-80 m-auto">
-    <div class="home-left flex items-center">
-        <div class="home-content">
-            <h6 class="poppinss">Hi, I'm</h6>
-            <h1 class="t-white">Ruchit Soni</h1>
-            <h4 class="poppinss">Software Engineer</h4>
-            <a href="{%static 'pdf/RuchitSoniNewCV.pdf'%}" target="_blank">
-            <button class="btn popinns">Resume</button>
-            </a>
-            <a class="btn live popinns" id="hireme" href="https://www.linkedin.com/in/ruchitsoni/"> Let's Talk</a>
+<body>`
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">My profile</h2>
         </div>
-    </div>
-    <div class="home-right flex s center items-center">
-        <div class="circle flex s-center items-center" id="mainImage">
-            <img src="{% static 'images/mypic.png' %}" alt="picture">
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
         </div>
-    </div>
-</section>
-<!--- about section---->
-<section id="about">
-<h1 class="t center my-2 t-white f-2">About<Menu></Menu></h1>
-    <div class="about-container flex s-around">
-        <div class="about-left flex s-center items-center">
-        <img src="{% static 'images/coder.png' %}" alt="coder's profile pic">
+    </nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Ruchit Soni</h1>
+                <h4 class="poppinss">Software Engineer</h4>
+                <a href="{% static 'pdf/RuchitSoniNewCv.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+
+                <a class="btn live poppins" id="hireme" href=""
+                    target="_blank">Let's Talk</a>
+            </div>
         </div>
-    </div>
-    <div class="about-right flex">
-        <div class="about-content">
-            <h1 class="t-white m-b-1 poppinss"> Ruchit Soni</h1>
-            <p class="t-white poppins">Software Engineer with 2+ years of experience in backend development and QA automation, currently pursuing a Global MBA in Berlin.
-Passionate about building scalable web apps and bridging tech with business strategy.</p>
-            <a href="btn" id="hireme "href="https://github.com/ruchitsoni3235">Hire Me</a>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/mypic.png'%}" alt="">
+            </div>
+
         </div>
-    </div>
-</section>
-<section id="skills">
-    <h1 class="t-center my-2 t-white f-2">Skills</h1>
-    <div class="services-container flex s-around h-50">
-    <div class="skills-left flex s-center items-center">
-      <img src="{% static 'images/pro.png' %}" alt="pro image">
-    </div>
-    </div>
-    <div class="skills-right flex items-center">
-        <div class="skills-container">
-            <div class="python bar p-relative"><span class="bar-content left t-white">Python</span>
-                <span  class="bar content right-skills t-white">90%</span>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/coder.png'%}" alt="" style="width: 60%;">
             </div>
-             <div class="django bar p-relative"><span class="bar-content left t-white">Django</span>
-                <span  class="bar content right-skills t-white">90%</span>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Ruchit Soni</h1>
+                    <p class="t-white poppins">Hey I am Ruchit Soni Software Engineer with over 2 years of experience in web development and test automation. Proficient in
+Python, SQL, and Selenium WebDriver, with a focus on backend development and software quality.
+Formerly at Amazon as a Customer Quality Associate. Skilled in data analysis and reporting using MS
+Excel. Currently expanding expertise in data analysis, Django, and modern web technologies through
+ongoing research and hands-on projects.</p>
+                    <a class="btn " id="hireme"
+                        href="https://www.linkedin.com/in/ruchitsoni/">Hire Me</a>
+                </div>
             </div>
-            <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span>
-                <span  class="bar content right-skills t-white">90%</span>
-            </div>
-            <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span>
-                <span  class="bar content right-skills t-white">80%</span>
-            </div>
-            <div class="restapi bar p-relative"><span class="bar-content left t-white">REST API</span>
-                <span  class="bar content right-skills t-white">70%</span>
-            </div>
-             <div class="javascript bar p-relative"><span class="bar-content left t-white">Javascript</span>
-                <span  class="bar content right-skills t-white">70%</span>
-            </div>
-              <div class="jira bar p-relative"><span class="bar-content left t-white">Jira</span>
-                <span  class="bar content right-skills t-white">80%</span>
-            </div>
-              <div class="mysql bar p-relative"><span class="bar-content left t-white">MYSQL</span>
-                <span  class="bar content right-skills t-white">70%</span>
-            </div>
-                <div class="github bar p-relative"><span class="bar-content left t-white">Github</span>
-                <span  class="bar content right-skills t-white">80%</span>
-            </div>
-                <div class="selenium bar p-relative"><span class="bar-content left t-white">Selenium</span>
-                <span  class="bar content right-skills t-white">70%</span>
-            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/pro.png'%}" alt="">
         </div>
 
-    </div>
-</section>
+        <div class="skills-right flex items-center">
+            <div class="skillls-container">
+                <div class="python bar p-relative"><span class="bar-content left t-white"> Python</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="jira bar p-relative"><span class="bar-content left t-white">Jira</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="postman bar p-relative"><span class="bar-content left t-white">Postman</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="selenium bar p-relative"><span class="bar-content left t-white">Selenium</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="Restapi bar p-relative"><span class="bar-content left t-white">RestAPIS</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                   <div class="Restapi bar p-relative"><span class="bar-content left t-white">Django</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">Music Player Application</h1>
+                <p class="t-white poppins" align="justify">Created a full-stack audio streaming platform with secure user
+access, media handling, and playlist management. Showcased on
+GitHub with demo and documentation.
+Handled media files using Django and added JS-based audio
+visualization.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/ruchitsoni3235/MusicPlayerUsingDjango" target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                    <h1 class="t-white poppins">Todo Application</h1>
+                <p class="t-white poppins" align="justify">This is a responsive and user-friendly weather application developed using Django. The app allows users to search for real-time weather information by entering a city name. It fetches current weather data from a public API (such as OpenWeatherMap) and displays key details like temperature, humidity, wind speed, and weather conditions.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/ruchitsoni3235/TodoListApp" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+                </div>
+
+                <div class="projects-item flex f-col s-center items-center">
+                    <h1 class="t-white poppins">Weather Application</h1>
+                <p class="t-white poppins" align="justify">This is a responsive and user-friendly weather application developed using Django. The app allows users to search for real-time weather information by entering a city name. It fetches current weather data from a public API (such as OpenWeatherMap) and displays key details like temperature, humidity, wind speed, and weather conditions.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/ruchitsoni3235/TodoListApp" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" >
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="number" name="number" id="number" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Ruchit Soni
+                </span></p>
+
+    </footer>
+
 </body>
 </html>
